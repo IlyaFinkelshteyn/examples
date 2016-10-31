@@ -1,3 +1,6 @@
 [submodule "3rd_party/rapidjson"]
 	path = 3rd_party/rapidjson
 	url = git://github.com/miloyip/rapidjson.git
+[submodule "3rd_party/rttr"]
+	path = 3rd_party/rttr
+	url = git://github.com/rttrorg/rttr.git
