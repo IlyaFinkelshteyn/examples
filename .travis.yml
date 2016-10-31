@@ -220,6 +220,8 @@ script:
       find src -name \*\.h -print -o -name \*\.cpp -print | vera++ --rule F001 --rule L001 --rule L002 --rule T001 --rule T002 --rule T009 --rule T013 --error
     fi
   - |
+    (cd build && make -j2)
+  - |
     if [[ "${VALGRIND}" == "true" ]]; then
       # Run unit tests on two cores
       (valgrind --leak-check=full --error-exitcode=1 ${TRAVIS_BUILD_DIR}/build/bin/json_serialization)
