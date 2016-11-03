@@ -54,8 +54,7 @@ install:
   #######################################################################################
   # init submodules
   #######################################################################################
-  - cmd: cd C:\projects\examples
-  - git submodule update --init --recursive
+  - cmd: cd C:\projects\examples & git submodule update --init --recursive
   
   #######################################################################################
   # All external dependencies are installed in C:\projects\deps
