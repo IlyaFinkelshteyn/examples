@@ -54,8 +54,9 @@ install:
   #######################################################################################
   # init submodules
   #######################################################################################
-  - cmd: cd C:\projects\examples & dir
-  
+  - git submodule update --init --recursive
+  - dir
+    
   #######################################################################################
   # All external dependencies are installed in C:\projects\deps
   #######################################################################################
@@ -125,6 +126,7 @@ before_build:
 # we can use Ninja for all configurations
 #######################################################################################
 build_script:
+  - git submodule update --init --recursive
   - mkdir build
   - cd build
   - cmake .. -G "Ninja" -DCMAKE_BUILD_TYPE=Release
