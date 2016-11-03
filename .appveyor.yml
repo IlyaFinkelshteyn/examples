@@ -114,7 +114,7 @@ before_build:
            default { write-host "unknown compiler for x64" }
         }
       }
-  - cmd: cd C:\projects\rttr_examples
+  - cmd: cd C:\projects\examples
 
 #######################################################################################
 # we can use Ninja for all configurations
