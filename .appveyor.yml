@@ -25,7 +25,7 @@
 #                                                                                  #
 ####################################################################################
 
-shallow_clone: true
+#shallow_clone: true
 
 environment:
   matrix:
